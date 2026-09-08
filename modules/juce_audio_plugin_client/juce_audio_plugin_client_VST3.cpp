@@ -69,6 +69,8 @@ JUCE_BEGIN_NO_SANITIZE ("vptr")
 #include <juce_audio_processors_headless/format_types/juce_VST3Common.h>
 #include <juce_audio_plugin_client/VST3/juce_VST3ModuleInfo.h>
 
+extern bool ecmapperAppendDirectVst3Events(juce::AudioProcessor&, Steinberg::Vst::IEventList&);
+
 #if JUCE_VST3_CAN_REPLACE_VST2 && ! JUCE_FORCE_USE_LEGACY_PARAM_IDS && ! JUCE_IGNORE_VST3_MISMATCHED_PARAMETER_ID_WARNING
 
  // If you encounter this error there may be an issue migrating parameter
@@ -3629,7 +3631,12 @@ public:
 
        #if JucePlugin_ProducesMidiOutput
         if (isMidiOutputBusEnabled && data.outputEvents != nullptr)
+        {
             MidiEventList::pluginToHostEventList (*data.outputEvents, midiBuffer);
+
+            if (pluginInstance != nullptr)
+                ecmapperAppendDirectVst3Events(*pluginInstance, *data.outputEvents);
+        }
        #endif
 
         return kResultTrue;
