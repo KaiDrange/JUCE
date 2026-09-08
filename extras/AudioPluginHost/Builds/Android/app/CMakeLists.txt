@@ -34,9 +34,9 @@ include_directories( AFTER
 enable_language(ASM)
 
 if(JUCE_BUILD_CONFIGURATION MATCHES "DEBUG")
-    add_definitions([[-DJUCE_PROJUCER_VERSION=0x90001]] [[-DJUCE_MODULE_AVAILABLE_juce_audio_basics=1]] [[-DJUCE_MODULE_AVAILABLE_juce_audio_devices=1]] [[-DJUCE_MODULE_AVAILABLE_juce_audio_formats=1]] [[-DJUCE_MODULE_AVAILABLE_juce_audio_processors=1]] [[-DJUCE_MODULE_AVAILABLE_juce_audio_processors_headless=1]] [[-DJUCE_MODULE_AVAILABLE_juce_audio_utils=1]] [[-DJUCE_MODULE_AVAILABLE_juce_core=1]] [[-DJUCE_MODULE_AVAILABLE_juce_cryptography=1]] [[-DJUCE_MODULE_AVAILABLE_juce_data_structures=1]] [[-DJUCE_MODULE_AVAILABLE_juce_dsp=1]] [[-DJUCE_MODULE_AVAILABLE_juce_events=1]] [[-DJUCE_MODULE_AVAILABLE_juce_graphics=1]] [[-DJUCE_MODULE_AVAILABLE_juce_gui_basics=1]] [[-DJUCE_MODULE_AVAILABLE_juce_gui_extra=1]] [[-DJUCE_MODULE_AVAILABLE_juce_opengl=1]] [[-DJUCE_WEBVIEW_INTEROP_LIBRARY_VERSION="1.0.0"]] [[-DJUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1]] [[-DJUCE_ASIO=1]] [[-DJUCE_WASAPI=1]] [[-DJUCE_DIRECTSOUND=1]] [[-DJUCE_ALSA=1]] [[-DJUCE_USE_FLAC=0]] [[-DJUCE_USE_OGGVORBIS=1]] [[-DJUCE_PLUGINHOST_VST3=1]] [[-DJUCE_PLUGINHOST_AU=1]] [[-DJUCE_PLUGINHOST_LADSPA=1]] [[-DJUCE_PLUGINHOST_LV2=1]] [[-DJUCE_USE_CDREADER=0]] [[-DJUCE_USE_CDBURNER=0]] [[-DJUCE_WEB_BROWSER=0]] [[-DJUCE_STANDALONE_APPLICATION=1]] [[-DJUCER_ANDROIDSTUDIO_7F0E4A25=1]] [[-DJUCE_APP_VERSION=1.0.0]] [[-DJUCE_APP_VERSION_HEX=0x10000]] [[-DDEBUG=1]] [[-D_DEBUG=1]])
+    add_definitions([[-DJUCE_PROJUCER_VERSION=0x90002]] [[-DJUCE_MODULE_AVAILABLE_juce_audio_basics=1]] [[-DJUCE_MODULE_AVAILABLE_juce_audio_devices=1]] [[-DJUCE_MODULE_AVAILABLE_juce_audio_formats=1]] [[-DJUCE_MODULE_AVAILABLE_juce_audio_processors=1]] [[-DJUCE_MODULE_AVAILABLE_juce_audio_processors_headless=1]] [[-DJUCE_MODULE_AVAILABLE_juce_audio_utils=1]] [[-DJUCE_MODULE_AVAILABLE_juce_core=1]] [[-DJUCE_MODULE_AVAILABLE_juce_cryptography=1]] [[-DJUCE_MODULE_AVAILABLE_juce_data_structures=1]] [[-DJUCE_MODULE_AVAILABLE_juce_dsp=1]] [[-DJUCE_MODULE_AVAILABLE_juce_events=1]] [[-DJUCE_MODULE_AVAILABLE_juce_graphics=1]] [[-DJUCE_MODULE_AVAILABLE_juce_gui_basics=1]] [[-DJUCE_MODULE_AVAILABLE_juce_gui_extra=1]] [[-DJUCE_MODULE_AVAILABLE_juce_opengl=1]] [[-DJUCE_WEBVIEW_INTEROP_LIBRARY_VERSION="1.0.0"]] [[-DJUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1]] [[-DJUCE_ASIO=1]] [[-DJUCE_WASAPI=1]] [[-DJUCE_DIRECTSOUND=1]] [[-DJUCE_ALSA=1]] [[-DJUCE_USE_FLAC=0]] [[-DJUCE_USE_OGGVORBIS=1]] [[-DJUCE_PLUGINHOST_VST3=1]] [[-DJUCE_PLUGINHOST_AU=1]] [[-DJUCE_PLUGINHOST_LADSPA=1]] [[-DJUCE_PLUGINHOST_LV2=1]] [[-DJUCE_USE_CDREADER=0]] [[-DJUCE_USE_CDBURNER=0]] [[-DJUCE_WEB_BROWSER=0]] [[-DJUCE_STANDALONE_APPLICATION=1]] [[-DJUCER_ANDROIDSTUDIO_7F0E4A25=1]] [[-DJUCE_APP_VERSION=1.0.0]] [[-DJUCE_APP_VERSION_HEX=0x10000]] [[-DDEBUG=1]] [[-D_DEBUG=1]])
 elseif(JUCE_BUILD_CONFIGURATION MATCHES "RELEASE")
-    add_definitions([[-DJUCE_PROJUCER_VERSION=0x90001]] [[-DJUCE_MODULE_AVAILABLE_juce_audio_basics=1]] [[-DJUCE_MODULE_AVAILABLE_juce_audio_devices=1]] [[-DJUCE_MODULE_AVAILABLE_juce_audio_formats=1]] [[-DJUCE_MODULE_AVAILABLE_juce_audio_processors=1]] [[-DJUCE_MODULE_AVAILABLE_juce_audio_processors_headless=1]] [[-DJUCE_MODULE_AVAILABLE_juce_audio_utils=1]] [[-DJUCE_MODULE_AVAILABLE_juce_core=1]] [[-DJUCE_MODULE_AVAILABLE_juce_cryptography=1]] [[-DJUCE_MODULE_AVAILABLE_juce_data_structures=1]] [[-DJUCE_MODULE_AVAILABLE_juce_dsp=1]] [[-DJUCE_MODULE_AVAILABLE_juce_events=1]] [[-DJUCE_MODULE_AVAILABLE_juce_graphics=1]] [[-DJUCE_MODULE_AVAILABLE_juce_gui_basics=1]] [[-DJUCE_MODULE_AVAILABLE_juce_gui_extra=1]] [[-DJUCE_MODULE_AVAILABLE_juce_opengl=1]] [[-DJUCE_WEBVIEW_INTEROP_LIBRARY_VERSION="1.0.0"]] [[-DJUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1]] [[-DJUCE_ASIO=1]] [[-DJUCE_WASAPI=1]] [[-DJUCE_DIRECTSOUND=1]] [[-DJUCE_ALSA=1]] [[-DJUCE_USE_FLAC=0]] [[-DJUCE_USE_OGGVORBIS=1]] [[-DJUCE_PLUGINHOST_VST3=1]] [[-DJUCE_PLUGINHOST_AU=1]] [[-DJUCE_PLUGINHOST_LADSPA=1]] [[-DJUCE_PLUGINHOST_LV2=1]] [[-DJUCE_USE_CDREADER=0]] [[-DJUCE_USE_CDBURNER=0]] [[-DJUCE_WEB_BROWSER=0]] [[-DJUCE_STANDALONE_APPLICATION=1]] [[-DJUCER_ANDROIDSTUDIO_7F0E4A25=1]] [[-DJUCE_APP_VERSION=1.0.0]] [[-DJUCE_APP_VERSION_HEX=0x10000]] [[-DNDEBUG=1]])
+    add_definitions([[-DJUCE_PROJUCER_VERSION=0x90002]] [[-DJUCE_MODULE_AVAILABLE_juce_audio_basics=1]] [[-DJUCE_MODULE_AVAILABLE_juce_audio_devices=1]] [[-DJUCE_MODULE_AVAILABLE_juce_audio_formats=1]] [[-DJUCE_MODULE_AVAILABLE_juce_audio_processors=1]] [[-DJUCE_MODULE_AVAILABLE_juce_audio_processors_headless=1]] [[-DJUCE_MODULE_AVAILABLE_juce_audio_utils=1]] [[-DJUCE_MODULE_AVAILABLE_juce_core=1]] [[-DJUCE_MODULE_AVAILABLE_juce_cryptography=1]] [[-DJUCE_MODULE_AVAILABLE_juce_data_structures=1]] [[-DJUCE_MODULE_AVAILABLE_juce_dsp=1]] [[-DJUCE_MODULE_AVAILABLE_juce_events=1]] [[-DJUCE_MODULE_AVAILABLE_juce_graphics=1]] [[-DJUCE_MODULE_AVAILABLE_juce_gui_basics=1]] [[-DJUCE_MODULE_AVAILABLE_juce_gui_extra=1]] [[-DJUCE_MODULE_AVAILABLE_juce_opengl=1]] [[-DJUCE_WEBVIEW_INTEROP_LIBRARY_VERSION="1.0.0"]] [[-DJUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1]] [[-DJUCE_ASIO=1]] [[-DJUCE_WASAPI=1]] [[-DJUCE_DIRECTSOUND=1]] [[-DJUCE_ALSA=1]] [[-DJUCE_USE_FLAC=0]] [[-DJUCE_USE_OGGVORBIS=1]] [[-DJUCE_PLUGINHOST_VST3=1]] [[-DJUCE_PLUGINHOST_AU=1]] [[-DJUCE_PLUGINHOST_LADSPA=1]] [[-DJUCE_PLUGINHOST_LV2=1]] [[-DJUCE_USE_CDREADER=0]] [[-DJUCE_USE_CDBURNER=0]] [[-DJUCE_WEB_BROWSER=0]] [[-DJUCE_STANDALONE_APPLICATION=1]] [[-DJUCER_ANDROIDSTUDIO_7F0E4A25=1]] [[-DJUCE_APP_VERSION=1.0.0]] [[-DJUCE_APP_VERSION_HEX=0x10000]] [[-DNDEBUG=1]])
     if(NOT (ANDROID_ABI STREQUAL "mips" OR ANDROID_ABI STREQUAL "mips64"))
         set(CMAKE_C_FLAGS_RELEASE "${CMAKE_C_FLAGS_RELEASE} -flto")
         set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -flto")
@@ -638,6 +638,7 @@ add_library( ${BINARY_NAME}
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/lilv/src/ui.c"
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/lilv/src/util.c"
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/lilv/src/world.c"
+    "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/lilv/JUCE_UPSTREAM.txt"
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/lv2/lv2/atom/atom-test-utils.c"
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/lv2/lv2/atom/atom-test.c"
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/lv2/lv2/atom/atom.h"
@@ -671,6 +672,7 @@ add_library( ${BINARY_NAME}
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/lv2/lv2/uri-map/uri-map.h"
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/lv2/lv2/urid/urid.h"
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/lv2/lv2/worker/worker.h"
+    "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/lv2/JUCE_UPSTREAM.txt"
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/serd/serd/serd.h"
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/serd/src/attributes.h"
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/serd/src/base64.c"
@@ -695,6 +697,7 @@ add_library( ${BINARY_NAME}
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/serd/src/uri.c"
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/serd/src/uri_utils.h"
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/serd/src/writer.c"
+    "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/serd/JUCE_UPSTREAM.txt"
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/sord/sord/sord.h"
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/sord/sord/sordmm.hpp"
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/sord/src/zix/btree.c"
@@ -712,11 +715,12 @@ add_library( ${BINARY_NAME}
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/sord/src/sordi.c"
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/sord/src/sordmm_test.cpp"
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/sord/src/syntax.c"
+    "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/sord/JUCE_UPSTREAM.txt"
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/sratom/sratom/sratom.h"
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/sratom/src/sratom.c"
+    "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/sratom/JUCE_UPSTREAM.txt"
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/juce_lv2_config.h"
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/lilv_config.h"
-    "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/README.md"
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/serd_config.h"
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/sord_config.h"
     "../../../../../modules/juce_audio_processors_headless/format_types/pslextensions/ipslcontextinfo.h"
@@ -850,7 +854,7 @@ add_library( ${BINARY_NAME}
     "../../../../../modules/juce_audio_processors_headless/format_types/VST3_SDK/public.sdk/source/vst/vstpresetfile.h"
     "../../../../../modules/juce_audio_processors_headless/format_types/VST3_SDK/public.sdk/LICENSE.txt"
     "../../../../../modules/juce_audio_processors_headless/format_types/VST3_SDK/public.sdk/README.md"
-    "../../../../../modules/juce_audio_processors_headless/format_types/VST3_SDK/JUCE_README.md"
+    "../../../../../modules/juce_audio_processors_headless/format_types/VST3_SDK/JUCE_UPSTREAM.txt"
     "../../../../../modules/juce_audio_processors_headless/format_types/VST3_SDK/LICENSE.txt"
     "../../../../../modules/juce_audio_processors_headless/format_types/VST3_SDK/README.md"
     "../../../../../modules/juce_audio_processors_headless/format_types/juce_ARACommon.h"
@@ -3474,6 +3478,7 @@ set_source_files_properties(
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/lilv/src/ui.c"
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/lilv/src/util.c"
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/lilv/src/world.c"
+    "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/lilv/JUCE_UPSTREAM.txt"
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/lv2/lv2/atom/atom-test-utils.c"
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/lv2/lv2/atom/atom-test.c"
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/lv2/lv2/atom/atom.h"
@@ -3507,6 +3512,7 @@ set_source_files_properties(
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/lv2/lv2/uri-map/uri-map.h"
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/lv2/lv2/urid/urid.h"
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/lv2/lv2/worker/worker.h"
+    "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/lv2/JUCE_UPSTREAM.txt"
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/serd/serd/serd.h"
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/serd/src/attributes.h"
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/serd/src/base64.c"
@@ -3531,6 +3537,7 @@ set_source_files_properties(
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/serd/src/uri.c"
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/serd/src/uri_utils.h"
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/serd/src/writer.c"
+    "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/serd/JUCE_UPSTREAM.txt"
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/sord/sord/sord.h"
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/sord/sord/sordmm.hpp"
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/sord/src/zix/btree.c"
@@ -3548,11 +3555,12 @@ set_source_files_properties(
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/sord/src/sordi.c"
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/sord/src/sordmm_test.cpp"
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/sord/src/syntax.c"
+    "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/sord/JUCE_UPSTREAM.txt"
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/sratom/sratom/sratom.h"
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/sratom/src/sratom.c"
+    "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/sratom/JUCE_UPSTREAM.txt"
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/juce_lv2_config.h"
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/lilv_config.h"
-    "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/README.md"
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/serd_config.h"
     "../../../../../modules/juce_audio_processors_headless/format_types/LV2_SDK/sord_config.h"
     "../../../../../modules/juce_audio_processors_headless/format_types/pslextensions/ipslcontextinfo.h"
@@ -3686,7 +3694,7 @@ set_source_files_properties(
     "../../../../../modules/juce_audio_processors_headless/format_types/VST3_SDK/public.sdk/source/vst/vstpresetfile.h"
     "../../../../../modules/juce_audio_processors_headless/format_types/VST3_SDK/public.sdk/LICENSE.txt"
     "../../../../../modules/juce_audio_processors_headless/format_types/VST3_SDK/public.sdk/README.md"
-    "../../../../../modules/juce_audio_processors_headless/format_types/VST3_SDK/JUCE_README.md"
+    "../../../../../modules/juce_audio_processors_headless/format_types/VST3_SDK/JUCE_UPSTREAM.txt"
     "../../../../../modules/juce_audio_processors_headless/format_types/VST3_SDK/LICENSE.txt"
     "../../../../../modules/juce_audio_processors_headless/format_types/VST3_SDK/README.md"
     "../../../../../modules/juce_audio_processors_headless/format_types/juce_ARACommon.h"
