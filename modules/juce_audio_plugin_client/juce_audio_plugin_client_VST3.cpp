@@ -3067,6 +3067,10 @@ public:
     }
 
     //==============================================================================
+#ifndef ECMAPPER_VST3_DIRECT_OUTPUT_BUS_COUNT
+   #define ECMAPPER_VST3_DIRECT_OUTPUT_BUS_COUNT 1
+#endif
+
     Steinberg::int32 PLUGIN_API getBusCount (Vst::MediaType type, Vst::BusDirection dir) override
     {
         if (type == Vst::kAudio)
@@ -3081,7 +3085,7 @@ public:
 
            #if JucePlugin_ProducesMidiOutput
             if (dir == Vst::kOutput)
-                return 1;
+                return ECMAPPER_VST3_DIRECT_OUTPUT_BUS_COUNT;
            #endif
         }
 
@@ -3163,7 +3167,7 @@ public:
            #endif
 
            #if JucePlugin_ProducesMidiOutput
-            if (dir == Vst::kOutput && index == 0)
+            if (dir == Vst::kOutput && index >= 0 && index < ECMAPPER_VST3_DIRECT_OUTPUT_BUS_COUNT)
             {
                 info.mediaType = Vst::kEvent;
                 info.direction = dir;
@@ -3174,8 +3178,10 @@ public:
                 info.channelCount = 16;
                #endif
 
-                toString128 (info.name, TRANS ("MIDI Output"));
-                info.busType = Vst::kMain;
+                toString128 (info.name, index == 0 ? TRANS ("MIDI Output 1")
+                                                   : (index == 1 ? TRANS ("MIDI Output 2")
+                                                                 : TRANS ("MIDI Output 3")));
+                info.busType = index == 0 ? Vst::kMain : Vst::kAux;
                 return kResultTrue;
             }
            #endif
@@ -3206,9 +3212,9 @@ public:
            #endif
 
            #if JucePlugin_ProducesMidiOutput
-            if (index == 0 && dir == Vst::kOutput)
+            if (dir == Vst::kOutput && index >= 0 && index < ECMAPPER_VST3_DIRECT_OUTPUT_BUS_COUNT)
             {
-                isMidiOutputBusEnabled = (state != 0);
+                isMidiOutputBusEnabled = (index == 0 ? (state != 0) : isMidiOutputBusEnabled.load());
                 return kResultTrue;
             }
            #endif
