@@ -3068,7 +3068,7 @@ public:
 
     //==============================================================================
 #ifndef ECMAPPER_VST3_DIRECT_OUTPUT_BUS_COUNT
-   #define ECMAPPER_VST3_DIRECT_OUTPUT_BUS_COUNT 1
+   #define ECMAPPER_VST3_DIRECT_OUTPUT_BUS_COUNT 3
 #endif
 
     Steinberg::int32 PLUGIN_API getBusCount (Vst::MediaType type, Vst::BusDirection dir) override
